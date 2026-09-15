@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Side-1" id="tsok1nYE-9IlHrr1BdRG">
+    <mxGraphModel dx="1191" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="LibreChat&#xa;Brugergrænseflade" mermaidId="n:LC" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#eaf2ff;strokeColor=#2f5597;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="LibreChat&#xa;Brugergrænseflade" id="2">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#eaf2ff;strokeColor=#2f5597;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="196" x="91" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LiteLLM&#xa;LLM gateway" mermaidId="n:LL" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#eaf2ff;strokeColor=#2f5597;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="LiteLLM&#xa;LLM gateway" id="3">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#eaf2ff;strokeColor=#2f5597;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="196" x="91" y="202" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Azure Foundry LLM-modeller" mermaidId="n:M" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#bf9000;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="LLM-modeller" id="4">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#bf9000;strokeWidth=2;fontColor=#000000;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="96" width="140" x="40" y="354" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Langfuse&#xa;Observability og tracing" mermaidId="n:LF" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#e8f5e9;strokeColor=#38761d;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="Langfuse&#xa;Observability og tracing" id="5">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#e8f5e9;strokeColor=#38761d;fontColor=default;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="231" x="540" y="202" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Modelkald" mermaidId="e:LC-&gt;LL#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5663265306122449;exitY=1;entryX=0.5855263157894737;entryY=0;curved=1;exitX=0.57;exitY=1;entryX=0.59;entryY=0;" mermaidBaseValue="Modelkald" id="6">
+          <mxCell edge="1" parent="1" source="2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Modelkald" mermaidId="e:LL-&gt;M#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.5855263157894737;exitY=1;entryX=0.5828025477707006;entryY=0;curved=1;exitX=0.59;exitY=1;entryX=0.58;entryY=0;" mermaidBaseValue="Modelkald" id="7">
+          <mxCell edge="1" parent="1" source="3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="4">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Modelsvar" mermaidId="e:M-&gt;LL#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4171974522292994;exitY=0;entryX=0.4144736842105263;entryY=1;curved=1;exitX=0.42;exitY=0;entryX=0.41;entryY=1;" mermaidBaseValue="Modelsvar" id="8">
+          <mxCell edge="1" parent="1" source="4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Svar" mermaidId="e:LL-&gt;LC#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.4144736842105263;exitY=0;entryX=0.4336734693877551;entryY=1;curved=1;exitX=0.41;exitY=0;entryX=0.43;entryY=1;" mermaidBaseValue="Svar" id="9">
+          <mxCell edge="1" parent="1" source="3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="2">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Trace, tokens, latency og fejl" mermaidId="e:LL-&gt;LF#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.86;entryX=0.5;entryY=0;" mermaidBaseValue="Trace, tokens, latency og fejl" id="10">
+          <mxCell edge="1" parent="1" source="3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;dashed=1;dashPattern=2 3;fixDash=1;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="5">
+            <mxGeometry relative="1" x="0.0009" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-10" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#bf9000;strokeWidth=2;fontColor=#000000;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="AU NAT Assist LLM-modeller" vertex="1">
+          <mxGeometry height="96" width="140" x="204" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-11" edge="1" parent="1" source="3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="tm0LpJIOWh7SgtUzfGsY-10" value="Modelkald">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-12" edge="1" parent="1" source="tm0LpJIOWh7SgtUzfGsY-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="3" value="Modelsvar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-13" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#c65911;strokeWidth=2;fontColor=#000000;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="LibreChat logdatabase&#xa;Gemmer chats" vertex="1">
+          <mxGeometry height="130" width="140" x="570" y="31.5" as="geometry" />
+        </mxCell>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-14" edge="1" parent="1" source="2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="tm0LpJIOWh7SgtUzfGsY-13" value="Gemmer chat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-15" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#c65911;strokeWidth=2;fontColor=#000000;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" value="Langfuse database&#xa;Gemmer kun chatmetadata" vertex="1">
+          <mxGeometry height="120" width="140" x="585.5" y="354" as="geometry" />
+        </mxCell>
+        <mxCell id="tm0LpJIOWh7SgtUzfGsY-16" edge="1" parent="1" source="5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;endArrow=block;endSize=7;strokeColor=#333333;fontColor=#333333;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;labelBackgroundColor=#E8E8E8;" target="tm0LpJIOWh7SgtUzfGsY-15" value="Gemmer metadata">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
